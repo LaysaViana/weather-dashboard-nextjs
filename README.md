@@ -17,11 +17,37 @@ O projeto foi desenvolvido com foco em:
 
 ---
 
-## Preview
+## Preview do projeto
 
 > Consulta de clima atual, previsão dos próximos dias e histórico de pesquisas.
 
-![Preview do projeto](./public/partly-cloudy-day.svg)
+## 🎥 Demonstração
+
+![Demonstração do Meteora](public/gifs/demo.gif)
+
+## Preview do projeto
+
+### Busca de cidades
+
+<p align="center">
+  <img
+    src="./public/screenshots/clima-atual.png"
+    alt="Busca de cidades"
+    width="100%"
+  />
+</p>
+
+---
+
+### 📅 Forecast semanal
+
+<p align="center">
+  <img
+    src="./public/screenshots/forecast-semanal.png"
+    alt="Previsão semanal"
+    width="100%"
+  />
+</p>
 
 ---
 

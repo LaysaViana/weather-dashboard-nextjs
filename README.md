@@ -39,7 +39,7 @@ O projeto foi desenvolvido com foco em:
 
 ---
 
-### 📅 Forecast semanal
+### Forecast semanal
 
 <p align="center">
   <img
@@ -364,6 +364,8 @@ http://localhost:3000
 - [ ] Sistema de favoritos
 - [ ] Dark Mode
 - [ ] Internacionalização (i18n)
+- [ ] Refatorar ícones meteorológicos para configuração dinâmica, removendo mapeamentos hardcoded
+- [ ] Refatorar gerenciamento de ícones meteorológicos para uma camada de configuração dinâmica, reduzindo hardcode e facilitando escalabilidade
 
 ---
 

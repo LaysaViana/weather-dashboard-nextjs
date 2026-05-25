@@ -285,6 +285,7 @@ src
 │   │
 │   ├── layout.tsx
 │   ├── page.tsx
+│   ├── not-found.tsx
 │   └── home.styles.ts
 │
 ├── components

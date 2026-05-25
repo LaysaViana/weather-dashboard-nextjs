@@ -1,0 +1,23 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.metricCard {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 18px;
+  backdrop-filter: blur(14px);
+}
+
+.label {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: 700;
+}

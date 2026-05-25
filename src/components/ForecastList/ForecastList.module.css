@@ -1,0 +1,135 @@
+.container {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(0.875rem, 2vw, 1.125rem);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1.25rem;
+  box-sizing: border-box;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.03),
+    0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.detailsButton {
+  border-radius: 0.75rem !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  flex-shrink: 0;
+}
+
+.forecastGrid {
+  display: flex;
+  gap: clamp(0.5rem, 2vw, 0.875rem);
+  width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  overscroll-behavior-x: contain;
+  padding-bottom: 0.75rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.45) transparent;
+}
+
+.forecastGrid::-webkit-scrollbar {
+  height: 5px;
+}
+
+.forecastGrid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.forecastGrid::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.forecastGrid::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.65);
+}
+
+.forecastCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(0.75rem, 2vw, 1rem);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+@media (hover: hover) {
+  .forecastCard:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.topContent {
+  min-height: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.day {
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.iconWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.weatherIcon {
+  font-size: clamp(2.1rem, 5vw, 3.25rem);
+  flex-shrink: 0;
+}
+
+.bottomContent {
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.maxTemp {
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
+  font-weight: 700;
+  line-height: 1.1;
+}

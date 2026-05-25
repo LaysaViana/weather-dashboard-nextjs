@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  padding: clamp(1rem, 3vw, 2rem);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heroContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metricCard {
+  height: 90px !important;
+  border-radius: 1rem !important;
+}

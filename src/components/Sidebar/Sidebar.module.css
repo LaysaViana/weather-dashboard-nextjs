@@ -1,0 +1,49 @@
+.sidebar {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  min-height: 100vh;
+  border-right: 1px solid;
+  border-radius: 12px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  backdrop-filter: blur(14px);
+}
+
+.logoWrapper {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.logoText {
+  font-size: 1.5rem !important;
+
+  font-weight: 600 !important;
+
+  line-height: 1;
+
+  margin: 0;
+}
+
+@media (hover: hover) {
+  .openMeteoLink:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    min-height: auto;
+    padding-right: 0;
+    border-right: none;
+    border-bottom: 1px solid;
+  }
+}

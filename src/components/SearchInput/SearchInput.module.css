@@ -1,0 +1,31 @@
+.container {
+  border: 1px solid;
+  border-radius: 18px;
+  padding: 12px 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputRoot :global(.MuiOutlinedInput-root) {
+  height: 54px;
+  border-radius: 16px;
+}
+
+.inputRoot :global(.MuiOutlinedInput-notchedOutline) {
+  border: none;
+}
+
+.inputRoot :global(.MuiInputBase-input) {
+  padding-left: 4px;
+  min-width: 0;
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 10px 14px;
+  }
+
+  .inputRoot :global(.MuiOutlinedInput-root) {
+    height: 50px;
+  }
+}
